@@ -1,4 +1,4 @@
-# distr6 1.1.0
+# distr6 1.2.0
 
 ## Major Updates
 
@@ -8,6 +8,8 @@
 
 ### Added Functions and Classes
 
+- Added non-central F, T, Chi-Squared, and Beta distributions
+
 ### Deprecated Functions
 
 ### Updated Functions
@@ -15,7 +17,8 @@
 ## Patches
 
 - Added `errormsg` argument to assertions so a custom error message can be provided
-
+- Fixed error in quantile function in `Empirical` that was causing results to be dropped
+- Fixed bug in `TruncatedDistribution` that prevented multivariate distributions being truncated
 
 # distr6 1.1.0
 
