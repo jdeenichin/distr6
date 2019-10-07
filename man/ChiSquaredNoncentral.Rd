@@ -13,7 +13,6 @@ is commonly used to model the sum of independent squared Normal distributions an
 \details{
 The Noncentral Chi-Squared distribution parameterised with  degrees of freedom, \eqn{\nu}, and location, \eqn{\lambda}, is defined by the pdf, \deqn{f(x) = exp(-\lambda/2) \sum_{r=0}^\infty ((\lambda/2)^r/r!) (x^{(\nu+2r)/2-1}exp(-x/2))/(2^{(\nu+2r)/2}\Gamma((\nu+2r)/2))} for \eqn{\nu \ge 0}, \eqn{\lambda \ge 0}.
 
-
 The distribution is supported on the Positive Reals.
 
 \code{entropy} and \code{mode}
@@ -117,8 +116,6 @@ omitted as no closed form analytic expression could be found, decorate with \cod
   \code{strprint(n = 2)} \tab \code{\link{strprint}} \cr
   \code{print(n = 2)} \tab \code{\link[base]{print}} \cr
   \code{summary(full = T)} \tab \code{\link{summary.Distribution}} \cr
-  \code{plot()} \tab Coming Soon. \cr
-  \code{qqplot()} \tab Coming Soon. \cr
   }
 }
 

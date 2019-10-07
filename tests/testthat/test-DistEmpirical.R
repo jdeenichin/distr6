@@ -2,14 +2,13 @@ library(testthat)
 
 context("Empirical distribution")
 
-test_that("constructor",{
+test_that("samples constructor",{
   expect_silent(Empirical$new(1:100))
   expect_error(Empirical$new(1,2,3))
   expect_error(Empirical$new())
   expect_null(Empirical$new(1:10)$getParameterValue(1))
   expect_message(expect_null(Empirical$new(1:10)$setParameterValue(1)))
 })
-
 
 emp = Empirical$new(1:10)
 test_that("properties & traits",{
@@ -21,7 +20,7 @@ test_that("properties & traits",{
 
 test_that("statistics",{
   expect_equal(emp$mean(), mean(1:10))
-  expect_equal(emp$variance(), var(1:10))
+  expect_equal(emp$variance(), var(1:10)*9/10)
   expect_error(emp$skewness())
   expect_error(emp$kurtosis())
   expect_error(emp$entropy())
